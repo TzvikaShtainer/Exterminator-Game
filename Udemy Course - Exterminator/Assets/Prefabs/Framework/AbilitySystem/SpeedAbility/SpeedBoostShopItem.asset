@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fba627ae6f561943b7fbe9e4feb6220, type: 3}
+  m_Name: SpeedBoostShopItem
+  m_EditorClassIdentifier: 
+  title: Speed Boost
+  price: 40
+  item: {fileID: 11400000, guid: 2271697dd1bf6034185e80ed40e71738, type: 2}
+  itemIcon: {fileID: 21300000, guid: f19dee43031df4c419e1729a213159d5, type: 3}
+  description: 'Boost Speed By 20m/s In 2 Seconds
+
+
+    Stamina Cost: 10
+
+    Cooldown:
+    2s'

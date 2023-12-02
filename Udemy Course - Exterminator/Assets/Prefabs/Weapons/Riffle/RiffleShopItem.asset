@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fba627ae6f561943b7fbe9e4feb6220, type: 3}
+  m_Name: RiffleShopItem
+  m_EditorClassIdentifier: 
+  title: Riffle
+  price: 100
+  item: {fileID: 7780122958810310641, guid: fc74fa5981235ec4ab83e21dba7886e4, type: 3}
+  itemIcon: {fileID: 21300000, guid: bcb466d06b26e734fae6c002912b7ccd, type: 3}
+  description: 'a powerfull assault riffle
+
+
+    Damage Rate: 40/s
+
+    Fire Rate:
+    8/s'
