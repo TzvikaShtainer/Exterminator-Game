@@ -20,7 +20,7 @@ namespace Prefabs.Enemy
         [SerializeField] private MovementComponent movementComponent;
         [SerializeField] private int teamID = 2;
         
-        [SerializeField] Reward killerReward;
+        [SerializeField] Framework.Reward.Reward killerReward;
 
         private Vector3 prevPos;
 
