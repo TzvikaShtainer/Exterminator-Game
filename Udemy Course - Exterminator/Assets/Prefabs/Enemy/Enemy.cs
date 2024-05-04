@@ -9,7 +9,6 @@ using Prefabs.Framework.Health;
 using Prefabs.Framework.Reward;
 using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.AI;
 
 namespace Prefabs.Enemy
 {
@@ -22,8 +21,6 @@ namespace Prefabs.Enemy
         [SerializeField] private int teamID = 2;
         
         [SerializeField] Framework.Reward.Reward killerReward;
-
-        [SerializeField] private TriggerDamageComponent triggerDamageComponent;
 
         private Vector3 prevPos;
 
@@ -46,7 +43,6 @@ namespace Prefabs.Enemy
         private void Awake()
         {
             perceptionComp.onPerceptionTargetChanged += TargetChanged;
-            
         }
 
         protected virtual void Start()
@@ -76,18 +72,6 @@ namespace Prefabs.Enemy
         private void StartDeath(GameObject killer)
         {
             TriggerDeathAnimation();
-
-            bool foundTriggerDamageComponent = GetComponentInParent<TriggerDamageComponent>();
-            Debug.Log(foundTriggerDamageComponent);
-            if (foundTriggerDamageComponent != null)
-            {
-                Debug.Log("dis StartDeath");
-                Debug.Log("triggerDamageComponent: " +triggerDamageComponent);
-                triggerDamageComponent.DisableBoxCollider();
-            }
-            
-            
-            
             
             IRewardListener[] rewardListeners = killer.GetComponents<IRewardListener>();
             foreach (IRewardListener rewardListener in rewardListeners)
@@ -106,7 +90,9 @@ namespace Prefabs.Enemy
 
         public void OnDeathAnimationFinished()
         {
+            Debug.Log("des");
             Dead();
+            Destroy(gameObject);
         }
 
         private void Update()
@@ -179,7 +165,7 @@ namespace Prefabs.Enemy
 
         protected virtual void Dead()
         {
-            Destroy(gameObject);
+            
         }
     }
 }

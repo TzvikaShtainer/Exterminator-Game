@@ -17,7 +17,7 @@ namespace Prefabs.Framework.AI.BehaviorTree
             {
                 return NodeResult.Success;
             }
-            //Debug.Log($"Wait Started with dur: {waitTime}");
+            Debug.Log($"Wait Started with dur: {waitTime}");
             timeElapsed = 0f;
             
             return NodeResult.Inprogress;
@@ -28,7 +28,7 @@ namespace Prefabs.Framework.AI.BehaviorTree
             timeElapsed += Time.deltaTime;
             if (timeElapsed >= waitTime)
             {
-                //Debug.Log("wait finished");
+                Debug.Log("wait finished");
                 return NodeResult.Success;
             }
             //Debug.Log($"waiting for {timeElapsed}");

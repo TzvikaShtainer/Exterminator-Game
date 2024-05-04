@@ -47,7 +47,7 @@ namespace Prefabs.Framework.AI.Perception
                         else
                         {
                             onPerceptionUpdated?.Invoke(stimuli, true);
-                            //Debug.Log($"i just sense {stimuli.gameObject}");
+                            Debug.Log($"i just sense {stimuli.gameObject}");
                         }
                     }
                 }
@@ -67,7 +67,7 @@ namespace Prefabs.Framework.AI.Perception
             yield return new WaitForSeconds(forgettingTime);
             forgettingRoutines.Remove(stimuli);
             onPerceptionUpdated?.Invoke(stimuli, false);
-            //Debug.Log($"i lost track of {stimuli.gameObject}");
+            Debug.Log($"i lost track of {stimuli.gameObject}");
         }
         protected virtual void DrawDebug()
         {

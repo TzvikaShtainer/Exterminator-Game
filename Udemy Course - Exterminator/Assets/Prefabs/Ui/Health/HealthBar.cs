@@ -21,13 +21,8 @@ public class HealthBar : MonoBehaviour
 
     private void Update()
     {
-        if (attachPoint == null)
-            Destroy(gameObject);
-        else
-        {
-            Vector3 ownerScreenPoint = Camera.main.WorldToScreenPoint(attachPoint.position);
-            transform.position = ownerScreenPoint; //put the healthbar in the place we want reletive to the trans
-        }
+        Vector3 ownerScreenPoint = Camera.main.WorldToScreenPoint(attachPoint.position);
+        transform.position = ownerScreenPoint; //put the healthbar in the place we want reletive to the trans
     }
 
     public void OnOwnerDeath(GameObject killer)

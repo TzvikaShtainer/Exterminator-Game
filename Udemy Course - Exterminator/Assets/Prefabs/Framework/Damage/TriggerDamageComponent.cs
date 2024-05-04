@@ -26,18 +26,8 @@ namespace Prefabs.Framework.Damage
                 return;
 
             HealthComponent healthComponent = other.GetComponent<HealthComponent>();
-            if (healthComponent != null)
-            {
+            if(healthComponent != null)
                 healthComponent.ChangeHealth(-damage, gameObject);
-                Debug.Log("hit");
-            }
-        }
-
-        public void DisableBoxCollider()
-        {
-            Debug.Log("in DisableBoxCollider");
-            trigger.enabled = false;
-            Debug.Log("dis DisableBoxCollider");
         }
     }
 }

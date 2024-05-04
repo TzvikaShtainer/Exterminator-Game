@@ -493,8 +493,6 @@ MonoBehaviour:
   pausedMenu: {fileID: 2140330345583290413}
   shop: {fileID: 1193402295168659553}
   deathMenu: {fileID: 5567582813050426836}
-  winMenu: {fileID: 0}
-  UIAudioPlayer: {fileID: 0}
   pausedBtn: {fileID: 4650455345948274452}
 --- !u!1001 &287069435301905134
 PrefabInstance:
