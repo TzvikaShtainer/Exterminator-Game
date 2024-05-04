@@ -89,6 +89,11 @@ PrefabInstance:
       objectReference: {fileID: 1004413685298255836}
     - target: {fileID: 746136006892467113, guid: 0dbf56211c02a3d46a6beff5c83e97cc,
         type: 3}
+      propertyPath: health
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 746136006892467113, guid: 0dbf56211c02a3d46a6beff5c83e97cc,
+        type: 3}
       propertyPath: volume
       value: 1
       objectReference: {fileID: 0}
@@ -97,6 +102,11 @@ PrefabInstance:
       propertyPath: hitAudio
       value: 
       objectReference: {fileID: 8300000, guid: c1c63d14bc9d9497b8f9b39c4ea3b1c7, type: 3}
+    - target: {fileID: 746136006892467113, guid: 0dbf56211c02a3d46a6beff5c83e97cc,
+        type: 3}
+      propertyPath: maxHealth
+      value: 200
+      objectReference: {fileID: 0}
     - target: {fileID: 746136006892467113, guid: 0dbf56211c02a3d46a6beff5c83e97cc,
         type: 3}
       propertyPath: deathAudio
@@ -110,17 +120,17 @@ PrefabInstance:
     - target: {fileID: 2975679678589713285, guid: 0dbf56211c02a3d46a6beff5c83e97cc,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 17.170624
       objectReference: {fileID: 0}
     - target: {fileID: 2975679678589713285, guid: 0dbf56211c02a3d46a6beff5c83e97cc,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 3.3555012
       objectReference: {fileID: 0}
     - target: {fileID: 2975679678589713285, guid: 0dbf56211c02a3d46a6beff5c83e97cc,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -20.07
       objectReference: {fileID: 0}
     - target: {fileID: 2975679678589713285, guid: 0dbf56211c02a3d46a6beff5c83e97cc,
         type: 3}
@@ -130,17 +140,17 @@ PrefabInstance:
     - target: {fileID: 2975679678589713285, guid: 0dbf56211c02a3d46a6beff5c83e97cc,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2975679678589713285, guid: 0dbf56211c02a3d46a6beff5c83e97cc,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2975679678589713285, guid: 0dbf56211c02a3d46a6beff5c83e97cc,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2975679678589713285, guid: 0dbf56211c02a3d46a6beff5c83e97cc,
         type: 3}
@@ -156,6 +166,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3831934251942453902, guid: 0dbf56211c02a3d46a6beff5c83e97cc,
+        type: 3}
+      propertyPath: patrolPoints.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4208282851819308894, guid: 0dbf56211c02a3d46a6beff5c83e97cc,
+        type: 3}
+      propertyPath: m_Center.x
+      value: 0.37
+      objectReference: {fileID: 0}
+    - target: {fileID: 4362567182569422457, guid: 0dbf56211c02a3d46a6beff5c83e97cc,
+        type: 3}
+      propertyPath: startedEnabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4362567182569422457, guid: 0dbf56211c02a3d46a6beff5c83e97cc,
         type: 3}
@@ -234,8 +259,9 @@ MonoBehaviour:
   teamID: 2
   killerReward:
     healthReward: 0
-    creditReward: 20
+    creditReward: 10
     staminaReward: 10
+  triggerDamageComponent: {fileID: 268982576577645806}
   behaviorTree: {fileID: 3267546221786608983}
   damageComp: {fileID: 268982576577645806}
 --- !u!114 &3267546221786608983

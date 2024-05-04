@@ -13,7 +13,7 @@ public class BTTask_Log : BTNode
     }
     protected override NodeResult Execute()
     {
-        Debug.Log(massage);
+        //Debug.Log(massage);
         return NodeResult.Success;
     }
 }

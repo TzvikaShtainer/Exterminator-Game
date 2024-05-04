@@ -55,7 +55,7 @@ namespace Prefabs.Framework.AbilitySystem
             float startTime = 0;
             while (startTime < damageDuration && enemyHealthComp != null)
             {
-                Debug.Log("here2");
+                //Debug.Log("here2");
                 startTime += Time.deltaTime;
                 enemyHealthComp.ChangeHealth(-damageRate * Time.deltaTime, AbilityComp.gameObject);
                 yield return new WaitForEndOfFrame();
